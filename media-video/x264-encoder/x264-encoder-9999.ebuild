@@ -37,7 +37,6 @@ DEPEND="
 	${RDEPEND}
 	amd64? ( ${ASM_DEP} )
 	x86? ( ${ASM_DEP} )
-    opencl? ( dev-lang/perl )
 	avisynthplus? ( media-video/avisynth+ )
 "
 BDEPEND="virtual/pkgconfig"

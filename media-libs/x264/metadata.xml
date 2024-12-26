@@ -9,6 +9,5 @@
 		<flag name="pic">disable optimized assembly code that is not PIC friendly</flag>
 		<flag name="lto">enable LTO</flag>
 		<flag name="avisynthplus">enable AVS+ frameserver support</flag>
-
 	</use>
 </pkgmetadata>
