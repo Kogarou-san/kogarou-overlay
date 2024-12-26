@@ -30,14 +30,15 @@ RDEPEND="
 	ffmpeg? ( media-video/ffmpeg:= )
 	ffmpegsource? ( media-libs/ffmpegsource )
 	mp4? ( >=media-video/gpac-0.5.2:= )
-    opencl? ( >=virtual/opencl-0-r3[${MULTILIB_USEDEP}]
+	opencl? ( >=virtual/opencl-0-r3[${MULTILIB_USEDEP}] )
 "
 ASM_DEP=">=dev-lang/nasm-2.13"
 DEPEND="
 	${RDEPEND}
 	amd64? ( ${ASM_DEP} )
 	x86? ( ${ASM_DEP} )
-	avisynthplus? ( media-video/avisynth+ )
+    opencl? ( dev-lang/perl )
+    avisynthplus? ( media-video/avisynth+ )
 "
 BDEPEND="virtual/pkgconfig"
 
@@ -59,9 +60,7 @@ src_configure() {
 		--system-libx264 \
 		--host="${CHOST}" \
 		--disable-lsmash \
-		$(usex avisynthplus "" "--disable-avisynth") \
-        $(usex lto "--enable-lto" "") \
-        $(usex opencl "" "--disable-opencl") \
+		$(usex avs "" "--disable-avs") \
 		$(usex ffmpeg "" "--disable-lavf --disable-swscale") \
 		$(usex ffmpegsource "" "--disable-ffms") \
 		$(usex interlaced "" "--disable-interlaced") \
