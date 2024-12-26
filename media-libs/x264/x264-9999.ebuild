@@ -29,7 +29,7 @@ DEPEND="
 	abi_x86_32? ( ${ASM_DEP} )
 	abi_x86_64? ( ${ASM_DEP} )
 	opencl? ( dev-lang/perl )
-	avisynthplus? ( media-video/avisynth+::guru )
+	avisynthplus? ( media-video/avisynth+ )
 "
 RDEPEND="opencl? ( >=virtual/opencl-0-r3[${MULTILIB_USEDEP}] )"
 
