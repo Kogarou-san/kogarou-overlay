@@ -68,3 +68,8 @@ src_configure() {
 	#   https://wiki.linuxfoundation.org/lsb/fhs
 }
 
+src_compile()
+{
+	tc-env_build cmake_build distribution
+}
+
