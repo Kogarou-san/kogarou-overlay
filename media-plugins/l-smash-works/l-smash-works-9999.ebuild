@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 EAPI=8
 inherit cmake toolchain-funcs git-r3 ${SCM}
-DESCRIPTION="This is a sample skeleton ebuild file"
+DESCRIPTION="lsmash"
 HOMEPAGE="https://foo.example.org/"
 if [ "${PV#9999}" != "${PV}" ] ; then
 	SCM="git-r3"
