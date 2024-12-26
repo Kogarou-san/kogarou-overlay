@@ -1,7 +1,7 @@
 # Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 EAPI=8
-inherit cmake flag-o-matic toolchain-funcs git-r3 ${SCM}
+inherit cmake toolchain-funcs git-r3 ${SCM}
 DESCRIPTION="This is a sample skeleton ebuild file"
 HOMEPAGE="https://foo.example.org/"
 if [ "${PV#9999}" != "${PV}" ] ; then
