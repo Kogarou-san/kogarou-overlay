@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<repositories version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name>kogarou-overlay</name>
+      <description lang="en">Kogarou's Custom Gentoo Overlay.</description>
+        <homepage>https://github.com/Kogarou-san/kogarou-overlay</homepage>
+        <owner type="person">
+            <name>kogarou</name>
+            <email>none</email>
+        </owner>
+        <source type="git">git://github.com/Kogarou-san/kogarou-overlay.git</source>
+        <feed>https://github.com/Kogarou-san/kogarou-overlay/commits/master.atom</feed>
+  </repo>
+</repositories>
