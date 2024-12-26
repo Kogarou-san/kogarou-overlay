@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="project">
+		<email>none</email>
+	</maintainer>
+	<use>
+		<flag name="interlaced">enable interlaced encoding support, this can decrease encoding speed by up to 2%</flag>
+		<flag name="pic">disable optimized assembly code that is not PIC friendly</flag>
+		<flag name="lto">enable LTO</flag>
+		<flag name="avisynthplus">enable AVS+ frameserver support</flag>
+
+	</use>
+</pkgmetadata>
